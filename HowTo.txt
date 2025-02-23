@@ -1,3 +1,25 @@
-Create module
+Create module and server 
+----------------------------------------------------------------------------------------------------------------------
 go mod init github.com/surojeetGhosh/rssagg
 Now you can Go Build
+go get github.com/joho/godotenv -> to add library to read .env
+go mod vendor -> to have your dependency on your local
+After using new modules use go mod tidy
+using chi library to create http routers
+Cors helps in telling browser what to do when request is made to a website, whether it is allowed or not etc.
+Now all request will send json responses, now we will create a helper function which will send json.
+After creating http handler to respond with json data
+
+
+
+router route to controller which handles request to handler and middleware are used to have extra checks on request.
+models/ services store data related tasks.
+
+500 and above code means error at server side
+Created a common error handler
+
+In go you can have vendor code on github or not if you don't want
+
+----------------------------------------------------------------------------
+
+Connecting Postgres Database
